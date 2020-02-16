@@ -6,16 +6,16 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register_page);
     }
 
-    public void clickServiceProvider(View view) {
-        Intent intent = new Intent(this, LoginActivity.class);
+    public void clickNext(View view) {
+        Intent intent = new Intent(this, HalamanProfile.class);
         startActivity(intent);
         finish();
     }
